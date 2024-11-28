@@ -22,7 +22,7 @@ fun SearchBar(modifier: Modifier = Modifier) {
     TextField(
         value = searchInput,
         onValueChange = { searchInput = it },
-        placeholder = { Text("") },
+        placeholder = { Text("Search") },
         modifier = modifier
             .fillMaxWidth()
             .background(md_theme_light_background),

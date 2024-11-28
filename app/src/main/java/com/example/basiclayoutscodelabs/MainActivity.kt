@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.basiclayoutscodelabs.align_body_section.AlignBody
+import com.example.basiclayoutscodelabs.favorite_collections.FavoriteCollections
 import com.example.basiclayoutscodelabs.ui.theme.BasicLayoutsCodelabsTheme
 import com.example.basiclayoutscodelabs.ui.theme.md_theme_light_background
 
@@ -39,7 +40,9 @@ fun HomeScreen(modifier: Modifier = Modifier) {
     ) {
         SearchBar()
         Spacer(modifier.height(30.dp))
-        AlignBody(listOf("Yoga","Box","Yoga2"))
+        AlignBody(listOf("Yoga","Box","Yoga2","Cardio","Swimming","Whatever"))
+        Spacer(modifier.height(30.dp))
+        FavoriteCollections(modifier)
     }
 }
 
