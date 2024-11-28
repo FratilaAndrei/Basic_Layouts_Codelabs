@@ -14,8 +14,8 @@ fun AlignBody(exercises: List<String>) {
     Column {
         Text("Align your Body")
         LazyRow {
-            items(exercises){
-                exercise -> BodyExercise(modifier= Modifier.padding(horizontal = 10.dp), exercise)
+            items(exercises) { exercise ->
+                BodyExercise(modifier = Modifier.padding(horizontal = 10.dp), exercise)
             }
         }
     }
